@@ -1,3 +1,5 @@
+import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -32,19 +34,19 @@ public class MyFirstClass {
 
         //byte b = (byte) 127;
         // System.out.println(b);
-        int i = 5;
+        //int i = 5;
 
         //i++;
         //++i;//Имеет самый высокий приоритет
 
-        int b = 5 + i++;
+        //int b = 5 + i++;
 
-        System.out.println(b);
+        //System.out.println(b);
 
-        i += 4;
+        // i += 4;
 
         //Остаток от деления
-        i = 10 % 2; //i=0(Oстатка нет)
+        // i = 10 % 2; //i=0(Oстатка нет)
 
 
        /* boolean attendJavaCources = true;
@@ -68,13 +70,13 @@ public class MyFirstClass {
         System.out.println(result);
        */
 
-        Scanner scanner = new Scanner(System.in);
+        //Scanner scanner = new Scanner(System.in);
 
-        if (scanner.hasNextInt()) {
+     /*   if (scanner.hasNextInt()) {
             int inputedInt = scanner.nextInt();
         }
-
-
+     */
+/*
         if (true) {
             System.out.println("in if");
         } else if (attendJavaCources()) {
@@ -100,8 +102,98 @@ public class MyFirstClass {
 
         System.out.println("out of switch");
 
+*/
 
+       /* boolean iNeedEven = true;
+
+        int oddOrEven = iNeedEven && true ? 2 : 1; //тернарный оператор
+
+        if (iNeedEven) {
+            oddOrEven = 2;
+        } else {
+            oddOrEven = 1;
+        }
+
+        System.out.println(oddOrEven);
+        */
+        /*
+        float difference = (1.1f + 2.2f) - 3.3f;
+        float sigma = 0.01f;
+        if(Math.abs(difference) <= sigma) {
+            System.out.println("equal");
+        }
+
+        if(1.1f + 2.2f == 3.3f){
+            System.out.println("It is obvious");
+        }else {
+            System.out.println("I should study java harder");
+        }
+        System.out.println(1.1f + 2.2f);//double и float не сравнивать с помощью ==
     }
+    */
+/*
+        //Массивы
+        int[] intArray = {1, 2, 3, 4, 5};
+        intArray = new int[5];
+        intArray = new int[10];
+
+        intArray = Arrays.copyOf(intArray, 20);
+
+        int[] newIntArray = {1, 2, 3, 4, 5};
+
+        int i = newIntArray[0];
+
+        System.out.println(i);
+
+        newIntArray[0] = 10;
+        i = newIntArray[0];
+
+        System.out.println(i);
+
+        System.out.println(Arrays.toString(newIntArray)); // вывод массива
+
+        System.out.println(newIntArray.length); // вывод размера массива
+
+        System.out.println("Before for");
+        */
+/*
+        for (int j = 0; j < newIntArray.length; j++) {
+            int element = newIntArray[j];
+            System.out.println(element);
+        }
+        */
+       /*
+        for (int j = 0; j < newIntArray.length; j++) {
+            if (j == 3) ;
+            {
+                continue;
+            }
+
+        }
+      */
+        /*
+        boolean[] boolArray = {true,true,false};
+        for(boolean element : boolArray){
+            System.out.println(element);
+        }
+        */
+        Scanner scanner = new Scanner(System.in);
+
+        while (!scanner.hasNextInt()){
+            scanner.next(); //очистка
+        }
+        int input = scanner.nextInt();
+        System.out.println("in: " + input);
+
+        //цикл с предусловием
+        do {
+
+        }while (true);
+
+       // Random random = new Random();
+       // int randomNumber = random.nextInt(10);
+    }
+
 
     public static boolean attendJavaCources() {
         System.out.println("in first method");
