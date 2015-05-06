@@ -8,11 +8,18 @@ import java.util.Scanner;
 public class ArraySort {
     static double number;
 
+
     public static void main(String[] params) {
+        int[] arr = {1, 3, 5, 2, 6, 4};
 
+        for (int i = 0;i <= 5;i++){
+            System.out.print(arr[i] + " ");
+        }
 
-
-
+        int[] brr = Sort(arr);
+        for (int i = 0;i <= 5;i++){
+            System.out.print(brr[i] + " ");
+        }
 
 
        /* Scanner sc = new Scanner(System.in);
@@ -35,6 +42,7 @@ public class ArraySort {
     }
 
     static int[] Sort(int[] arr) {
+
         if (arr.length > 1) {
             int[] left = new int[arr.length / 2];
             int[] right = new int[arr.length - left.length];
