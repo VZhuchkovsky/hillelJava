@@ -57,12 +57,12 @@ public class ArraySort {
                 left = sort(left);
             if (right.length > 1)
                 right = sort(right);
-            arr = MergeSort(left, right);
+            arr = mergeSort(left, right);
         }
         return arr;
     }
 
-    static int[] MergeSort(int[] left, int[] right) {
+    static int[] mergeSort(int[] left, int[] right) {
         int[] arr = new int[left.length + right.length];
         int l = 0;
         int r = 0;
