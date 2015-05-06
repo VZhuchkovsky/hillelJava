@@ -11,14 +11,16 @@ public class ArraySort {
 
     public static void main(String[] params) {
         int[] arr = {1, 3, 5, 2, 6, 4};
-
-        for (int i = 0;i <= 5;i++){
-            System.out.print(arr[i] + " ");
+        System.out.println("Array: ");
+        for (int i = 0; i <= 5; i++) {
+            System.out.print(arr[i] + ";");
         }
+        System.out.println("   ");
 
         int[] brr = Sort(arr);
-        for (int i = 0;i <= 5;i++){
-            System.out.print(brr[i] + " ");
+        System.out.println("Sorted Array: ");
+        for (int i = 0; i <= 5; i++) {
+            System.out.print(brr[i] + ";");
         }
 
 
