@@ -47,6 +47,8 @@ public class ArraySort {
             int[] left = new int[arr.length / 2];
             int[] right = new int[arr.length - left.length];
 
+            //int[] part1 = Arrays.copyOfRange(arr,0,left.length);
+           // int[] part2 = Arrays.copyOfRange(arr,0,right.length);
             for (int i = 0; i < left.length; i++) {
                 left[i] = arr[i];
             }
@@ -78,11 +80,7 @@ public class ArraySort {
             } else {
                 arr[i] = right[r];
                 r++;
-
-                if (l < left.length)
-                    number += left.length - 1;
             }
-
         }
         return arr;
     }
