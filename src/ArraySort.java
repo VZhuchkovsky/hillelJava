@@ -9,7 +9,13 @@ public class ArraySort {
     static double number;
 
     public static void main(String[] params) {
-        Scanner sc = new Scanner(System.in);
+
+
+
+
+
+
+       /* Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter number of arrays: ");
 
@@ -25,7 +31,7 @@ public class ArraySort {
         System.out.println(s);
 
         System.out.println();
-        
+       */
     }
 
     static int[] Sort(int[] arr) {

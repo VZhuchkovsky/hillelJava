@@ -17,12 +17,12 @@ public class Rectangle {
     public static void resolve(double p, double s) {
         double x;
         double y;
-        double D = Math.pow(p / 2, 2) - 4 * s;
-        if (D > 0) {
-            x = ((p / 2) + Math.sqrt(D)) / 2;
-            y = ((p / 2) - Math.sqrt(D)) / 2;
+        double d = Math.pow(p / 2, 2) - 4 * s;
+        if (d > 0) {
+            x = ((p / 2) + Math.sqrt(d)) / 2;
+            y = ((p / 2) - Math.sqrt(d)) / 2;
             System.out.println("width = " + x + "\nheight = " + y);
-        } else if (D == 0) {
+        } else if (d == 0) {
             x = (p / 2) / 2;
             y = x;
             System.out.println("length = " + y);
