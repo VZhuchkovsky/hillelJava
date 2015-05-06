@@ -12,16 +12,14 @@ public class ArraySort {
     public static void main(String[] params) {
         int[] arr = {1, 3, 5, 2, 6, 4};
         System.out.println("Array: ");
-        for (int i = 0; i <= 5; i++) {
-            System.out.print(arr[i] + ";");
-        }
+        Arrays.toString(arr);
+        System.out.print(Arrays.toString(arr));
         System.out.println("   ");
 
-        int[] brr = Sort(arr);
+        arr = sort(arr);
         System.out.println("Sorted Array: ");
-        for (int i = 0; i <= 5; i++) {
-            System.out.print(brr[i] + ";");
-        }
+        Arrays.toString(arr);
+        System.out.print(Arrays.toString(arr));
 
 
        /* Scanner sc = new Scanner(System.in);
@@ -43,7 +41,7 @@ public class ArraySort {
        */
     }
 
-    static int[] Sort(int[] arr) {
+    static int[] sort(int[] arr) {
 
         if (arr.length > 1) {
             int[] left = new int[arr.length / 2];
@@ -56,9 +54,9 @@ public class ArraySort {
                 right[i] = arr[left.length + i];
             }
             if (left.length > 1)
-                left = Sort(left);
+                left = sort(left);
             if (right.length > 1)
-                right = Sort(right);
+                right = sort(right);
             arr = MergeSort(left, right);
         }
         return arr;
