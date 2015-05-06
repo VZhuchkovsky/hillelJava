@@ -5,24 +5,25 @@ import java.util.Scanner;
  */
 public class Rectangle {
     public static void main(String[] params) {
-        double P;
-        double S;
+        double p;
+        double s;
         Scanner in = new Scanner(System.in);
         System.out.print("Insert P: ");
-        P = in.nextDouble();
+        p = in.nextDouble();
         System.out.print("Insert S: ");
-        S = in.nextDouble();
-        resolve(P, S);
+        s = in.nextDouble();
+        resolve(p, s);
     }
-    public static void resolve(double P, double S) {
-        double x,y;
-        double D = Math.pow(P / 2, 2) - 4 * S;
+    public static void resolve(double p, double s) {
+        double x;
+        double y;
+        double D = Math.pow(p / 2, 2) - 4 * s;
         if (D > 0) {
-            x = ((P / 2) + Math.sqrt(D)) / 2;
-            y = ((P / 2) - Math.sqrt(D)) / 2;
+            x = ((p / 2) + Math.sqrt(D)) / 2;
+            y = ((p / 2) - Math.sqrt(D)) / 2;
             System.out.println("width = " + x + "\nheight = " + y);
         } else if (D == 0) {
-            x = (P / 2) / 2;
+            x = (p / 2) / 2;
             y = x;
             System.out.println("length = " + y);
             System.out.println("width = " + x);

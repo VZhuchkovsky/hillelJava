@@ -14,16 +14,15 @@ public class ArraySort {
         System.out.println("Enter number of arrays: ");
 
         int n = sc.nextInt();
-        int[] a = new int[n];
-
+        int[] arr = new int[n];
 
         System.out.println("Enter your arrays: ");
 
         for (int i = 0; i < n; i++) {
-            a = sc.nextInt();
+            arr = sc.nextInt();
         }
-        String s = Arrays.toString(a);
-        System.out.println("Array a is " + s);
+        String s = Arrays.toString(arr);
+        System.out.println(s);
 
         System.out.println();
         
