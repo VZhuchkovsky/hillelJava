@@ -11,23 +11,23 @@ public class ArraySort {
 
     public static void main(String[] params) {
         //int[] arr = {1, 3, 5, 2, 6, 4};
-        int [] arr;
-        arr = new int[10];
-        int[] a = generateRandomArray(arr);
+
+        int[] a = generateRandomArray();
 
         System.out.println("Array: ");
         Arrays.toString(a);
         System.out.print(Arrays.toString(a));
         System.out.println("   ");
 
-        arr = sort(a);
+        a = sort(a);
         System.out.println("Sorted Array: ");
-        Arrays.toString(arr);
-        System.out.print(Arrays.toString(arr));
+        Arrays.toString(a);
+        System.out.print(Arrays.toString(a));
 
     }
 
-    static int[] generateRandomArray(int[] arr) {
+    static int[] generateRandomArray() {
+        int[] arr = new int[10];
         Random rand = new Random();
         for (int i = 0; i < arr.length; i++) {
             arr[i] = rand.nextInt(50);
