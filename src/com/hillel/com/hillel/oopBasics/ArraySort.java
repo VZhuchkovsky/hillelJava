@@ -12,7 +12,7 @@ public class ArraySort {
     public static void main(String[] params) {
         //int[] arr = {1, 3, 5, 2, 6, 4};
 
-        int[] a = generateRandomArray();
+        int[] a = generateRandomArray(10);
 
         System.out.println("Array: ");
         Arrays.toString(a);
@@ -26,8 +26,8 @@ public class ArraySort {
 
     }
 
-    static int[] generateRandomArray() {
-        int[] arr = new int[10];
+    static int[] generateRandomArray(int size) {
+        int[] arr = new int[size];
         Random rand = new Random();
         for (int i = 0; i < arr.length; i++) {
             arr[i] = rand.nextInt(50);
