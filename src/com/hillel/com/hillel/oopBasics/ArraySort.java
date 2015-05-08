@@ -11,22 +11,28 @@ public class ArraySort {
 
     public static void main(String[] params) {
         //int[] arr = {1, 3, 5, 2, 6, 4};
-        int[] arr;
+        int [] arr;
         arr = new int[10];
-        Random rand = new Random();
-        for(int i = 0; i < 10; i++){
-          arr[i] = rand.nextInt(50);
-        }
+        int[] a = generateRandomArray(arr);
+
         System.out.println("Array: ");
-        Arrays.toString(arr);
-        System.out.print(Arrays.toString(arr));
+        Arrays.toString(a);
+        System.out.print(Arrays.toString(a));
         System.out.println("   ");
 
-        arr = sort(arr);
+        arr = sort(a);
         System.out.println("Sorted Array: ");
         Arrays.toString(arr);
         System.out.print(Arrays.toString(arr));
 
+    }
+
+    static int[] generateRandomArray(int[] arr) {
+        Random rand = new Random();
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = rand.nextInt(50);
+        }
+        return arr;
     }
 
     static int[] sort(int[] arr) {
@@ -35,10 +41,12 @@ public class ArraySort {
 
             int[] left = Arrays.copyOfRange(arr, 0, arr.length / 2);
             int[] right = Arrays.copyOfRange(arr, arr.length / 2, arr.length);
-            if (left.length > 1)
+            if (left.length > 1) {
                 left = sort(left);
-            if (right.length > 1)
+            }
+            if (right.length > 1) {
                 right = sort(right);
+            }
             arr = mergeSort(left, right);
         }
         return arr;
