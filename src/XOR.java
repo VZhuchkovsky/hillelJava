@@ -18,10 +18,8 @@ public class XOR {
 
     public static String crypt(String message, char[] key) {
         char[] array = message.toCharArray();
-        int l = array.length;
-        int o = key.length;
-        for (int i = 0; i < l; i++) {
-            array[i] ^= key[i % o];
+        for (int i = 0; i < array.length; i++) {
+            array[i] ^= key[i % key.length];
         }
         message = String.copyValueOf(array);
         return message;
