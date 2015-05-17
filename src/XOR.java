@@ -21,16 +21,7 @@ public class XOR {
         int l = array.length;
         int o = key.length;
         for (int i = 0; i < l; i++) {
-            for (int j = 0; j < o; j++) {
-                if (i % o == 0) {
-                    j = 0;
-                    j++;
-                    array[i] ^= key[j];
-                } else {
-                    array[i] ^= key[j];
-                }
-
-            }
+            array[i] ^= key[i % o];
         }
         message = String.copyValueOf(array);
         return message;
