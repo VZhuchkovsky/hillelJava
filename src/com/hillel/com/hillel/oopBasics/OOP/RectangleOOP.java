@@ -4,6 +4,12 @@ package com.hillel.com.hillel.oopBasics.OOP;
  * Created by Влад on 14.06.2015.
  */
 public class RectangleOOP {
+    public static void main(String[] args) {
+        RectangleOOP rectangleOOP = new RectangleOOP(4,4);
+        //String rectangle = rectangleOOP.toString();
+        String rectangle = toString(rectangleOOP);
+        System.out.println(rectangle);
+    }
 
     public double length;
     public double width;
@@ -12,8 +18,9 @@ public class RectangleOOP {
         this.length = l;
         this.width = w;
     }
-    public String toString(){
-        return "";
+    public static String toString(RectangleOOP rectangleOOP){
+        String rectangle = rectangleOOP.toString();
+        return rectangle;
     }
 
 
