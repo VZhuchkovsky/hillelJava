@@ -9,15 +9,15 @@ public class RectangleTask {
         //resolve();
     }
 
-    public RectangleOOP getRectangle(double p, double s){
-        if(hasSolution(p,s) == false)
-        return null;
-        else return resolve(p,s);
+    public RectangleOOP getRectangle(double p, double s) {
+        if (hasSolution(p, s) == false)
+            return null;
+        else return resolve(p, s);
     }
 
-    public boolean hasSolution(double p, double s){
-        if(Math.pow(p/2,2) - 4*s < 0 )
-        return false;
+    public boolean hasSolution(double p, double s) {
+        if (Math.pow(p / 2, 2) - 4 * s < 0)
+            return false;
         else return true;
     }
 
