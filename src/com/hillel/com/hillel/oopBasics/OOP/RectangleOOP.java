@@ -12,6 +12,9 @@ public class RectangleOOP {
         this.length = l;
         this.width = w;
     }
+    public String toString(){
+        return "";
+    }
 
 
     //RectangleOOP rectangle1 = new RectangleOOP(4,1);

@@ -7,15 +7,22 @@ public class RectangleTask {
     public static void main(String[] args) {
 
         //resolve();
+
     }
 
-    public RectangleOOP getRectangle(double p, double s) {
-        if (hasSolution(p, s) == false)
+    public RectangleTask(double p, double s) {
+
+    }
+
+    public static RectangleOOP getRectangle(double l, double w) {
+        if (hasSolution(l,w) == false)
             return null;
-        else return resolve(p, s);
+        else return new RectangleOOP(l,w);
     }
 
-    public boolean hasSolution(double p, double s) {
+    public static boolean hasSolution(double l, double w) {
+        double p = 2*(l+w);
+        double s = l*w;
         if (Math.pow(p / 2, 2) - 4 * s < 0)
             return false;
         else return true;
