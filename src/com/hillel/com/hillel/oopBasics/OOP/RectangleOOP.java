@@ -6,21 +6,19 @@ package com.hillel.com.hillel.oopBasics.OOP;
 public class RectangleOOP {
     public static void main(String[] args) {
         RectangleOOP rectangleOOP = new RectangleOOP(4,4);
-        //String rectangle = rectangleOOP.toString();
-        String rectangle = toString(rectangleOOP);
-        System.out.println(rectangle);
+
+        System.out.println();
     }
 
     public double length;
     public double width;
 
     RectangleOOP(double l, double w) {
-        this.length = l; 
+        this.length = l;
         this.width = w;
     }
-    public static String toString(RectangleOOP rectangleOOP){
-        String rectangle = rectangleOOP.toString();
-        return rectangle;
+    public String toString(){
+       return "";
     }
 
 

@@ -4,7 +4,7 @@ package com.hillel.com.hillel.oopBasics.OOP;
  * Created by Влад on 14.06.2015.
  */
 public class RectangleTask {
-    /*public static void main(String[] args) {
+    public static void main(String[] args) {
 
         //resolve();
 
@@ -12,7 +12,9 @@ public class RectangleTask {
 
     public RectangleTask(double p, double s) {
 
-    }*/
+    }
+
+
 
     public static RectangleOOP getRectangle(double l, double w) {
         if (hasSolution(l,w) == false)
